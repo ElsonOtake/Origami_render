@@ -82,6 +82,4 @@ test:
 #
 production:
   <<: *default
-  database: Origami_render_production
-  username: Origami_render
-  password: <%= ENV["ORIGAMI_RENDER_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
